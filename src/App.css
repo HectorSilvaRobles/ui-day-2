@@ -1,33 +1,165 @@
-.App {
-  text-align: center;
+.App{
+  background: #223555
+}
+.header {
+  height: 15vh;
+  width: 100%;
+  display: flex;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  height: 100vh;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.logo-hsr {
+  border: #C60000 solid 3px;
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-hsr > h1 {
+  font-size: 25px;
+  color:#C60000;
+}
+
+.slogo{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+}
+
+.slogo >h1, .slogo > h2{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.slogo > h1 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #C60000;
+}
+
+.slogo > h2 {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.nav{
+  height: 100%;
+  width: 70%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.nav > ul > li {
+  list-style-type: none;
+  font-size:20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.left-side {
+  background: white;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+  display: flex;
+  width: 60%;
+  flex-direction: column;;
+  align-items: left;
+  margin-bottom: 80px;
+}
+
+.info > h1, .info > h2, .info >p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.info > h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.info > h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 120%;
+  color: #C60000;
+  margin-bottom: 25px;
+}
+
+.info > p {
+  color: #797777;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.buttons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons > button {
+  height: 60px;
+  width: 160px;
+  border-radius: 30px;
+  background: #797777;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: #C60000;
+  border: none;
+}
+
+.buttons > .book-now {
+  color:#C60000;
+  background: white;
+  border: solid 3px #C60000;
+}
+
+.visual-section {
+  height: 100%;
+  width: 70%;
+}
+.clouds {
+  width: 100%;
 }
