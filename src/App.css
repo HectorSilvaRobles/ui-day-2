@@ -197,3 +197,7 @@ html {
   width: 75%;
   transform: scaleX(-1);
 }
+
+@media screen and (max-width: 1350px) and (min-width: 1020px){
+  
+}
