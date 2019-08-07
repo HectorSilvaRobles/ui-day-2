@@ -1,14 +1,20 @@
+html {
+  background: black;
+}
 .App{
-  background: #223555
+  background: #223555;
+  height: 100vh;
+  width: 100vw;
+  
 }
 .header {
-  height: 15vh;
+  height: 20%;
   width: 100%;
   display: flex;
 }
 
 .banner {
-  height: 100vh;
+  height: 80%;
   display: flex;
 }
 
@@ -86,6 +92,12 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
+  font-family: arial;
+}
+
+.nav > ul > li:hover {
+  color: lightgrey;
+  cursor: pointer;
 }
 .left-side {
   background: white;
@@ -99,9 +111,11 @@
 
 .info {
   display: flex;
-  width: 60%;
+  width: 80%;
+  height: 30%;
   flex-direction: column;;
   align-items: left;
+  justify-content: center;
   margin-bottom: 80px;
 }
 
@@ -109,37 +123,41 @@
   margin: 0;
   padding: 0;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .info > h2 {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-weight: 600;
 }
 .info > h1 {
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  width: 120%;
+  width: 140%;
   color: #C60000;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .info > p {
   color: #797777;
   letter-spacing: 2px;
   line-height: 1.4;
+  font-size: 16px;
 }
 
 .buttons {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
 .buttons > button {
   height: 60px;
-  width: 160px;
+  width: 45%;
   border-radius: 30px;
   background: #797777;
   font-size: 16px;
@@ -150,8 +168,15 @@
   border: none;
 }
 
+.buttons>button:hover{
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 .buttons > .book-now {
-  color:#C60000;
+  color: #C60000;
   background: white;
   border: solid 3px #C60000;
 }
@@ -159,7 +184,16 @@
 .visual-section {
   height: 100%;
   width: 70%;
+  overflow: hidden;
 }
 .clouds {
   width: 100%;
+}
+
+.plane {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 75%;
+  transform: scaleX(-1);
 }

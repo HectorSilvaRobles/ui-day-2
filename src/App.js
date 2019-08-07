@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import clouds from './Media/cloud.png'
+import plane from './Media/plane.png'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         </div>
         <div className='visual-section'>
             <img className='clouds' src={clouds} />
+            <img className='plane' src={plane} />
         </div>
       </body>
     </div>
